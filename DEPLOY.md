@@ -22,7 +22,7 @@ created_at - timestamp
 
 - Changer l'url de l'api dans Result.vue et Vote.vue
 
-- Faire tourner l'app vue.js dans un environnement avec npm installé
+- Faire tourner l'app vue.js dans un environnement avec npm installé (npm run dev en local, ou npm run build)
 
 - Faire tourner les fichier php dans un serveur Apache ou nGinx
 
