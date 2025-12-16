@@ -1,20 +1,29 @@
-# Dependencies
-node_modules/
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
 
-# Build output
-dist/
+# Backend
+backend/vendor/
+backend/.env
 
-# Environment files
-.env
+# Base de données
+db_data/
+
+# Docker
+*.log
+*.pid
+*.sock
+
+# Git
+.git/
+.gitignore
 
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
-.DS_Store
+*.iml
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# OS
+.DS_Store
+Thumbs.db
