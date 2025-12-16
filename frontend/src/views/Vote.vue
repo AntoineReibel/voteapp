@@ -30,7 +30,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api'
+const API_URL = import.meta.env.VITE_API_URL
 
 const hasVoted = ref(false)
 const voted = ref(false)
