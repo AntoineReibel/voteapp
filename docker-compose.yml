@@ -1,12 +1,12 @@
 services:
   # Base de données MySQL
   db:
-    build:
-      context: ./db
-      dockerfile: Dockerfile
-    image: voteapp-db:local
+    # buil:
+      # context: ./db
+      # dockerfile: Dockerfile
+    image: ghcr.io/antoinereibel/voteapp-db:latest
     container_name: voteapp_db
-    restart: always
+    restart: no
     ports:
       - "3306:3306"
     volumes:
@@ -26,11 +26,12 @@ services:
 
   # Backend PHP
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+    # build:
+      # context: ./backend
+      # dockerfile: Dockerfile
+    image: ghcr.io/antoinereibel/voteapp-backend:latest
     container_name: voteapp_backend
-    restart: always
+    restart: no
     ports:
       - "8080:80"
     depends_on:
@@ -46,11 +47,12 @@ services:
 
   # Frontend Vue.js
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+    # build:
+    #   context: ./frontend
+    #   dockerfile: Dockerfile
+    image: ghcr.io/antoinereibel/voteapp-frontend:latest
     container_name: voteapp_frontend
-    restart: always
+    restart: no
     ports:
       - "80:80"
     depends_on:
