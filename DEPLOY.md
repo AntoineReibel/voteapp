@@ -1,9 +1,5 @@
 VoteApp
 
-Lancez tous les services avec Docker :
+Changer l'URL de l'API dans frontend/env.production
 
-docker-compose up -d --build
-
-
-Frontend → http://localhost
-Backend → http://localhost/api
+Deployer les images à l'aid edes Dockerfiles
